@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#302E2E"
+    tools:context=".MainActivity"
+    android:screenOrientation="portrait">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#302E2E"
+                android:gravity="center|right"
+                android:paddingRight="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onNumberClick"
+                        android:text="7"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onNumberClick"
+                        android:text="8"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onNumberClick"
+                        android:text="9"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onNumberClick"
+                        android:text="4"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onNumberClick"
+                        android:text="5"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onNumberClick"
+                        android:text="6"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onNumberClick"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onNumberClick"
+                        android:text="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onNumberClick"
+                        android:text="3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onNumberClick"
+                        android:text="0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onNumberClick"
+                        android:text="."
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="÷"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onNumberClick"
+                        android:text="DEL"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="×"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="−"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#242424"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="="
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#4357C0"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="C"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#4357C0"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="RAD"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#4357C0"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="!"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#4357C0"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="sin"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#4357C0"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="cos"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#4357C0"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="tan"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#4357C0"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="ln"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#4357C0"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="log"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#4357C0"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="√"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#4357C0"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="π"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#4357C0"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="е"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="85dp"
+                        android:layout_height="58dp"
+                        android:background="#4357C0"
+                        android:fontFamily="Merriweather"
+                        android:onClick="onOperationClick"
+                        android:text="^"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
